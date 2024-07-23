@@ -1,0 +1,84 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Bahnschrift SemiCondensed', sans-serif;
+    background-color: #dfe9e7;
+}
+
+header{
+    display: flex; 
+    background-color: rgba(35, 45, 94, 0.974);
+    height: 85px; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.fondo{
+    
+    background-color: rgba(148, 199, 224, 0.884);
+    height: 530px; 
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 22px; 
+    border-radius: 25px; 
+}
+
+.descripcion{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion p{
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+
+.sintomas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+button[name="diagnostico"] {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #444447; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button[name="diagnostico"]:hover {
+    background-color: #010961; 
+}
+
+textarea[name="resultado"] {
+    margin-top: 10px; 
+    width: 70%; 
+    height: 250px; 
+    padding: 10px; 
+    resize: none; 
+    border-radius: 5px; 
+    font-size: 15px; 
+    display: block; 
+    margin: 90px auto; 
+}

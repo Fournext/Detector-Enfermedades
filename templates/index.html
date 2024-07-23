@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostico De Enfermedades</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <!--<link rel="stylesheet" href="index.css">-->
+</head>
+<body>
+    <header>
+        <h1>"DIAGNOSTICO DE ENFERMEDADES"</h1>
+    </header>
+
+
+        
+        
+        <form action="{{ url_for('procesar_sintomas') }}" method="post">
+
+            <div class="fondo">
+                <div class="descripcion">
+                    <p>Seleccione los sintomas que tiene:</p>
+                </div>
+
+                <div class="sintomas">
+                    <div class="grupo 1">
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="FIEBRE"> FIEBRE</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="DOLOR DE CABEZA"> DOLOR DE CABEZA</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="DOLOR DE OJOS"> DOLOR DE OJOS</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="DOLOR MUSCULAR"> DOLOR MUSCULAR</label>
+        
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="NAUSEAS"> NAUSEAS</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="MALESTAR GENERAL"> MALESTAR GENERAL</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="SARPULLIDO EN LA PIEL"> SARPULLIDO EN LA PIEL</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="ESCALOFRIOS"> ESCALOFRIOS</label>
+        
+        
+                  
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="CANSANCIO"> CANSANCIO</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="OJOS ROJOS"> OJOS ROJOS</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="DOLOR EN ARTICULACIONES"> DOLOR EN ARTICULACIONES</label>
+        
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="DOLOR DE GARGANTA"> DOLOR DE GARGANTA</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="TOS SECA"> TOS SECA</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="SECRECIONES NASALES"> SECRECIONES NASALES</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="COMPLICACIONES AL RESPIRAR"> COMPLICACIONES AL RESPIRAR</label>
+        
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="PIEL PALIDA"> PIEL PALIDA</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="EXTREMIDADES FRIAS"> EXTREMIDADES FRIAS</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="MAREOS"> MAREOS</label>
+                    </div>
+        
+                    <div class="grupo 1">
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="DIARREA"> DIARREA</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="PRESION EN EL PECHO"> PRESION EN EL PECHO</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="PERDIDA DE SENTIDOS GUSTO O OLFATO"> PERDIDA DE SENTIDOS GUSTO O OLFATO</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="SUDORES NOCTURNOS"> SUDORES NOCTURNOS</label>
+                
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="TOS INTENSA PROLONGADA +15 DIAS"> TOS INTENSA PROLONGADA</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="TOS CON SANGRE"> TOS CON SANGRE</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="TOS CON FLEMA"> TOS CON FLEMA</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="CONGESTION NASAL"> CONGESTION NASAL</label>
+                
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="RESPIRACION CON SILVIDOS"> RESPIRACION CON SILVIDOS</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="OJOS Y PIEL AMARILLOS"> OJOS Y PIEL AMARILLOS</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="FATIGA"> FATIGA</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="ORINA OSCURA"> ORINA OSCURA</label>
+                
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="PUNTOS BLANCOS EN LA BOCA"> PUNTOS BLANCOS EN LA BOCA</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="FALTA DE APETITO"> FALTA DE APETITO</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="DOLOR ABDOMINAL"> DOLOR ABDOMINAL</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="PERDIDA DE PESO"> PERDIDA DE PESO</label>
+        
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="VOMITO"> VOMITO</label>
+                        <label style="margin-right: 20px; display: block;"><label><input type="checkbox" name="sintoma" value="ALMIGDALAS INFLAMADAS"> ALMIGDALAS INFLAMADAS</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="DIFICULTAD PARA TRAGAR"> DIFICULTAD PARA TRAGAR</label>
+                        <label style="display: block;"><label><input type="checkbox" name="sintoma" value="DOLOR DE DIENTES"> DOLOR DE DIENTES</label>
+
+                    </div>
+                </div>
+    
+                
+            </div>
+
+            
+            <button type="submit" name="diagnostico">Diagnóstico</button>
+            <textarea name="resultado" class="textarea-notas" placeholder="">{{ resultado }}</textarea>
+        </form>
+
+    <br>
+</body>
+</html>
